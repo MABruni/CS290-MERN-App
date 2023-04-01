@@ -1,0 +1,148 @@
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(228, 224, 155);
+  font-family: 'Garamond', serif;
+  color: #6b307f;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  overflow: scroll;
+}
+
+h2 {
+  font-size: calc(14px + 2vmin);
+}
+
+.App {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+.App-header {
+  position: relative;
+  z-index: 1000;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.create-link {
+  font-size: calc(10px + 1vmin);
+  background-color: rgb(217, 215, 215);
+  border: 2px solid black;
+  color: #57b16d;
+  font-weight: bolder;
+  color: #2b5736;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-bottom: 10px;;
+  border-radius: 10px;
+}
+
+.create-link:hover {
+  background-color: rgb(241, 237, 237);
+  color: #57b16d;
+  box-shadow: 2px 2px 0px 0px rgb(77, 77, 77);
+}
+
+table {
+  border-collapse: collapse;
+  border: 3px solid #420c41;
+  margin-bottom: 20px;
+}
+
+tr th {
+  font-family: 'Arial', sans-serif;
+  border: 2px solid rgb(172, 228, 229);
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  color: #105154;
+  text-align: center;
+  background-color: #04AA6D;
+}
+
+tr td {
+  font-family: 'Helvetica', sans-serif;
+  border: 2px solid rgb(172, 228, 229);
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  color: #420c41;
+  text-align: center;
+}
+
+tr:nth-child(odd){ background-color: rgb(118, 139, 200);}
+
+tr:nth-child(even){background-color: #e3b37c;}
+
+tr:nth-child(odd):hover {
+  background-color: rgb(98, 116, 169);
+  transition: background-color 0.5s ease;
+}
+
+tr:nth-child(even):hover {
+  background-color: #bb9366;
+  transition: background-color 0.5s ease;
+}
+
+form input, form button {
+  font-family: 'Garamond', serif;
+}
+
+input, select, option, button {
+  font-size: 20px;
+  margin: 2px;
+  height: fit-content;
+  width:fit-content;
+  text-align: center;
+}
+
+footer {
+  font-size: calc(8px + 1vmin);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-top: 300px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nav-items {
+  font-size: calc(8px + 2vmin);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home-nav {
+  color:rgb(0,191,255);
+  flex:1;
+  margin-right: 20px;
+}
+
+.Create-nav {
+  color:rgb(0,191,255);
+  flex:1;
+}
+
+.Home-nav:hover {
+  color:rgb(53, 119, 119);
+}
+
+.Create-nav:hover {
+  color:rgb(53, 119, 119);
+}
